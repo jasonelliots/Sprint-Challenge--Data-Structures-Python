@@ -9,8 +9,7 @@ class RingBuffer:
         self.data.insert(self.current, item)
         self.current += 1
         if self.current == self.capacity:
-            self.current = 0
-            self.data.pop(-1) 
+            self.current = 0 
             
     def get(self):
         # items = []
