@@ -14,30 +14,9 @@ duplicates = set()  # Return the list of duplicates in this data structure
 
 # Replace the nested for loops below with your improvements
 
-combined = set()
-
-for name_1 in names_1:
-    combined.add(name_1)
-
-for name_2 in names_2:
-    combined.add(name_2)
-
-for name in combined:
-    if name in names_2 and name in names_1:
+for name in names_1:
+    if name in names_2:
         duplicates.add(name)
-
-
-# combined = set()
-# for name_1 in names_1:
-#     combined.add(name_1)
-
-# for name_2 in names_2:
-#     combined.add(name_2)
-
-# for name in names_2:
-#     if name not in combined:
-#         duplicates.add(name)
-
 
 # for name_1 in names_1:
 #     for name_2 in names_2:
